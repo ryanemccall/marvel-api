@@ -17,7 +17,7 @@ searchForm.addEventListener('click', fetchResults);
 function fetchResults(e) {
     e.preventDefault();
     let startsWith = searchName.value
-    url = baseURL + `?name=${startsWith}&apikey=${apikey}`
+    url = baseURL + '?name=' + '&apikey=' + apikey
     fetch(url)
     .then(function(result) {
         return result.json()
